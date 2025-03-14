@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Rafael Ferreira</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="../styles/keita.css">
+</head>
+<body>
+    <div id="Page" class="is-dark">
+        <div id="background">
+            <canvas id="c"></canvas>
+        </div>
+        <div class="mask" id="Mask">
+            <div class="mask-top"></div>
+            <div class="mask-bottom"></div>
+        </div>
+        <div id="Frame" class="frame">
+            <div class="frame_line frame_line-left"></div>
+            <div class="frame_line frame_line-right"></div>
+            <div class="frame_line frame_line-top"></div>
+            <div class="frame_line frame_line-bottom"></div>
+        </div>
+        
+        <!-- Botões para troca de cores -->
+        <div id="Theme" class="theme">
+            <div class="theme_colors">
+                <div class="theme_btn" id="lightMode">
+                    <div class="_box"></div>
+                    <div class="_text">Light</div>
+                </div>
+                <div class="theme_btn is-selected" id="darkMode">
+                    <div class="_box"></div>
+                    <div class="_text">Dark</div>
+                </div>
+            </div>
+        </div>
+
+        <header class="siteHeader" id="SiteHeader">
+            <h1 class="siteHeader_title">Rafael Ferreira</h1>
+            <p class="siteHeader_label">Web Developer</p>
+            <nav class="siteHeader_nav">
+                <ol>
+                    <li class="is-selected">
+                        <div class="_dot">●</div>
+                        <a href="/" class="_text">Home</a>
+                    </li>
+                    <li>
+                        <div class="_dot">●</div>
+                        <a href="/projects/" class="_text">Projects</a>
+                    </li>
+                    <li>
+                        <div class="_dot">●</div>
+                        <a href="/info/" class="_text">Info</a>
+                    </li>
+                    <li>
+                        <div class="_dot">●</div>
+                        <a href="/contact/" class="_text">Contact</a>
+                    </li>
+                    <li>
+                        <div class="_dot">●</div>
+                        <a href="/faq/" class="_text">FAQ</a>
+                    </li>
+                </ol>
+            </nav>
+        </header>
+
+        <div id="Copyright">
+            <p>© Rafael Ferreira</p>
+        </div>
+
+        <main id="Content" class="content">
+            <div class="content_inner">
+                <section class="page" data-page="home" style="display: block; opacity: 1;">
+                    <div class="page-content home">
+                        <p class="home_aboutme">
+                            <span>Born in 2005</span>
+                            <span>in Minas Gerais, Brasil</span>
+                            <span>Web developer</span>
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <div id="intro-text">
+            <span id="first-word">Rafael Ferreira</span>
+            <span id="second-word">Portfolio</span>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="../JavaScript/index.js"></script>
+    <script src="../JavaScript/teste.js"></script>
+</body>
+</html>
